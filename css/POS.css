@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+    background-color: darkblue;
+    padding: 5px;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    height: 75px;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+    float: left;
+    width: 30%;
+    height: 300px; /* only for demonstration, should be removed */
+    background: #ccc;
+    padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+section>nav>ul>li{
+    font-family: 'Russo One', sans-serif;
+}
+section{
+    position: relative;
+    border: black solid 5px;
+}
+article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #f1f1f1;
+    height: 300px; /* only for demonstration, should be removed */
+}
+article>h1{
+    font-family: 'Sniglet', cursive;
+}
+/* Clear floats after the columns */
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: 2px solid darkblue;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 400px;
+    height: 50px;
+   margin-left: -17px;
+    margin-top: -10px;
+}
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+
+}
+
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color:crimson;
+    color: white;
+}
+
+.button2 {
+     background-color:darkblue;
+     border: none;
+     color: white;
+     padding: 10px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 16px;
+     margin: 3px 3px;
+    width: 200px;
+     cursor: pointer;
+    margin-left: 50%;
+ }
+
+/* Style the footer */
+footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+/* Responsive la
